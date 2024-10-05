@@ -1,0 +1,165 @@
+.projects {
+    background-color: #e1dcf5;
+    padding: 100px 20px; /* Added horizontal padding for smaller screens */
+    border-radius: 10px; 
+    margin: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+body {
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+/* Heading Styles */
+.projects h1 {
+    font-size: 60px; 
+    margin-bottom: 50px; /* Adjusted margin for better spacing */
+    color: #333;
+    text-align: center; 
+}
+
+/* Description Styles */
+.project-description {
+    font-size: 20px; 
+    line-height: 1.6; 
+    color: black; 
+    margin: 20px 0; 
+    text-align: center; /* Center-align the description */
+}
+
+/* Project List Styles */
+.projects-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+/* Project Card Styles */
+.project-card {
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    margin: 20px; 
+    padding: 20px; /* Adjusted padding for smaller cards */
+    text-align: center; 
+    width: 250px; 
+    height: 300px; /* Increased height for better layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    animation: slideIn 0.5s ease forwards; /* Entrance animation */
+}
+
+/* Hover Effect for Project Card */
+.project-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Image Styles */
+.project-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Hover Effect for Project Image */
+.project-card:hover .project-image {
+    transform: scale(1.1); 
+}
+
+/* Project Link Styles */
+.project-link {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+/* Hover Effect for Project Link */
+.project-link:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+    animation: pulse 0.6s infinite; /* Apply pulse animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        padding: 50px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .projects h1 {
+        font-size: 40px; /* Smaller font size for headings */
+    }
+
+    .project-card {
+        width: 80%; /* Make project cards take up more width */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .project-description {
+        font-size: 18px; /* Smaller font size for description */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 30px 5px; /* Further reduce padding for mobile */
+    }
+
+    .projects h1 {
+        font-size: 30px; /* Even smaller font size */
+    }
+
+    .project-card {
+        width: 90%; /* Make project cards responsive on very small screens */
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .project-description {
+        font-size: 16px; /* Smaller font size */
+    }
+}

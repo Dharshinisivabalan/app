@@ -1,0 +1,90 @@
+/* About.css */
+
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.bordered-box {
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.bordered-box img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bordered-box:hover {
+  border-color: #333;
+  transition: border-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .bordered-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about p, .about ul li {
+    font-size: 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,160 @@
+body {
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: #ffffff; 
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Navbar height */
+    z-index: 1000; /* Keeps the navbar on top */
+    background-color: #333; /* Background color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Home section */
+.home {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black; 
+    width: 90%; /* Responsive width */
+    max-width: 700px; /* Max width */
+    height: auto; 
+    padding: 15px; /* Padding */
+    background-color: #e1dcf5; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 15px; /* Gap between elements */
+    margin: 15px auto; /* Centered margins */
+    padding-top: 80px; /* Push below the navbar */
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: auto; 
+    width: 100%; 
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    background-color: rgba(11, 1, 1, 0.593);
+    padding: 20px; /* Padding */
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    width: auto; 
+}
+
+.hero h1 {
+    font-size: 28px; /* Header size */
+    color: #00e6e6; 
+    margin-bottom: 15px; 
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+.hero p {
+    font-size: 16px; /* Paragraph size */
+    color: #00e6e6; 
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+.hero img {
+    width: 150px; /* Image size */
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    position: absolute; 
+    top: 70%;
+    right: -400px; /* Positioning */
+    transform: translateY(-50%);
+    box-shadow: 0 8px 16px rgb(153, 176, 212);
+    z-index: 2;
+}
+
+.home section {
+    padding: 30px 10px; /* Section padding */
+    width: 100%; 
+    margin: 15px 0; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .home {
+        width: 95%; /* Increase width on medium screens */
+    }
+    .hero h1 {
+        font-size: 26px; /* Header size */
+    }
+    .hero p {
+        font-size: 15px; /* Paragraph size */
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        width: 95%; /* Full width for smaller screens */
+        padding: 10px; /* Less padding */
+    }
+    .hero h1 {
+        font-size: 24px; /* Reduced header size */
+    }
+    .hero p {
+        font-size: 14px; /* Reduced paragraph size */
+    }
+    .hero img {
+        width: 80px; /* Smaller image */
+        height: 80px; 
+        right: -20px; /* Adjusted position */
+    }
+    .hero .overlay {
+        padding: 15px; /* Reduced overlay padding */
+    }
+}
+
+.about {
+    background-color: #e1dcf5; 
+    padding: 15px; /* Padding */
+    border-radius: 20px; 
+}
+
+.about p {
+    color: black; 
+    font-size: 14px; /* Reduced font size */
+    line-height: 1.6; 
+}
+
+p {
+    font-size: 18px; /* Default font size */
+    line-height: 1.6; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 14px; /* Reduced font size for mobile */
+    }
+}
+

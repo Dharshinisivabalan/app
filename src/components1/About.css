@@ -1,0 +1,69 @@
+.about {
+  background-color: #e1dcf5; /* Light lavender background for the about section */
+  padding: 20px; /* Padding around the section */
+  border-radius: 20px; /* Rounded corners */
+  max-width: 800px; /* Set a max-width for larger screens */
+  margin: 20px auto; /* Center the section and add vertical margin */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  text-align: center; /* Center text inside the section */
+}
+
+.about h1 {
+  color: black; 
+  font-size: 30px; /* Keep this size for larger screens */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.about p {
+  color: black; /* Text color for paragraphs */
+  font-size: 16px; /* Base font size for paragraphs */
+  line-height: 1.6; /* Better line spacing */
+  margin-bottom: 15px; /* Space below each paragraph */
+}
+
+/* Body Styles */
+body {
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  margin: 0; /* Remove default body margin */
+  font-family: 'Poppins', sans-serif; /* Consistent font for the body */
+}
+
+/* Responsive Container Class */
+.your-container-class {
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  max-width: 100%;    
+  padding: 0 15px; /* Add some horizontal padding */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .about h1 {
+    font-size: 24px; /* Adjust header size for smaller screens */
+  }
+
+  .about p {
+    font-size: 16px; /* Smaller font size for better readability */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  .about h1 {
+    font-size: 20px; /* Smaller header size for mobile */
+  }
+
+  .about p {
+    font-size: 14px; /* Even smaller font size for mobile */
+    margin-bottom: 8px; /* Adjust margin for mobile */
+  }
+}

@@ -1,0 +1,45 @@
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Fills the entire viewport */
+  background-color: #f0f0f0;
+}
+
+.bordered-box {
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  position: relative; /* Allows for absolute positioning of child elements */
+  width: 80%; /* Adjust width as needed */
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start; /* Aligns text to the left */
+  align-items: center;
+}
+
+.hero h1, .hero h2 {
+  margin: 0;
+}
+
+.dharshini {
+  position: absolute; 
+  right: -500px; 
+  top: 50%; /* Center vertically relative to the bordered box */
+  transform: translateY(-50%); /* Center adjustment */
+  max-width: 150px; /
+  height: auto;
+  border-radius: 2000px
+  ; 
+}
+
+
+
+
+
+
+
+
+
